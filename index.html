@@ -5,14 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebView TeleMedicina</title>
     <style>
+	
+		header {
+			width: 100%;
+			background-color: #f4f4f4;
+			position: fixed;
+			text-align: center;
+			top: 0;
+		}
+		header img {
+			width: 40%;
+		}		
+
         body {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
+            justify-content: center;
             height: 100vh;
             margin: 0;
+			top: 0;
             background-color: #f4f4f4;
         }
+
 
         #content {
             text-align: center;
@@ -28,13 +43,26 @@
             color: #fff;
             border-radius: 5px;
             cursor: pointer;
+            margin-top: 20px;
         }
+
+        p {
+            font-size: 24px;
+        }
+		
     </style>
+	
 </head>
+
 <body>
+    <header>
+        <img id="logo" src="https://casembrapa.com.br/storage/app/public/appearance_setting/logo_for_white_background.png" alt="Logo" />
+    </header>
+	
     <div id="content">
-        <p>Acesse aqui a Telemedicina NAV</p>
+        <p>Acesse a Telemedicina da CASEMBRAPA</p>
         <a id="openLinkButton" href="https://nav.dasa.com.br/" target="_blank">Clique aqui</a>
     </div>
 </body>
+
 </html>
